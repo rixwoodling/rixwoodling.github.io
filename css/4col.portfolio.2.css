@@ -180,7 +180,8 @@ img:hover {
 
 .resizable .row .col {
 width:100%;
-      } 
+} 
+
 @media (min-width:1024px) {
 /* orig min-width:1024px */    
 /* (768 * 12) / 9 */
