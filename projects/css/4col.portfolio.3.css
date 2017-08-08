@@ -12,13 +12,62 @@ body {
     background-color: #333;
     -webkit-font-smoothing: antialiased;
 }
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
 a {
     text-decoration: none;
     color: #fff;
 }
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
 p > a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
+}
+li {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
 }
 
 /* header ------------------------------------------------------------------ */
@@ -96,7 +145,7 @@ ul.social-icons {
     background-color: #eee;
     color: #444;
 }
-.fa-arrow-left {
+.fa-github-alt {
     padding:8px 9px;
     border-radius: 5px;
     -o-transition:.2s;
@@ -106,7 +155,7 @@ ul.social-icons {
     transition: .2s;
     background-color: #2b2b2b;
 }
-.fa-arrow-left:hover {
+.fa-github-alt:hover {
     background-color: #eee;
     color: #444;
 }
@@ -160,15 +209,8 @@ ul.social-icons {
 /* portfolio --------------------------------------------------------------- */
 
 img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-  -webkit-backface-visibility: hidden; /* Fix for transition flickering */    
-}
-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);    
+    display: block;
+    margin: 0 auto;
 }
 .container {
     background-color: #e0e0e0;
@@ -179,7 +221,12 @@ img:hover {
     padding-right: 5%;
     padding-top: 25px;
     max-width: 700px;
+    height: 100%;
     background-color: #e0e0e0;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
 .resizable .row .col {
@@ -237,3 +284,12 @@ width:100%;
     text-decoration:none;
     color:#999;
 }
+.footer p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 5px;
+}
+
