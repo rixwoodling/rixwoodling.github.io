@@ -9,7 +9,7 @@
 /* body -------------------------------------------------------------------- */
 
 body {
-    background-color: #333;
+    background-color: #3e3d41; /* originally #333 */
     -webkit-font-smoothing: antialiased;
 }
 a {
@@ -175,7 +175,7 @@ img:hover {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 25px;
-    background-color: #e0e0e0;
+    background-color: #f8f8ff; /* originally #e0e0e0 */
 }
 
 .resizable .row .col {
