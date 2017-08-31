@@ -14,7 +14,7 @@ body {
 }
 h3 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
@@ -191,17 +191,21 @@ ul.social-icons {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 25px;
-    max-width: 700px;
-    background-color: #e0e0e0;
+    max-width: 100%;
+    background-color: #dce3e5;
 }
+.container img {
+    border-radius: 5px;
+}
+
 .container p {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 10px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 20px;
-    margin-bottom: 10;
+	line-height: 15px;
+    margin-bottom: 20px;
 }
 .container a {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -221,9 +225,9 @@ ul.social-icons {
 .container hr {
   border:none;
   border-top:1px dotted #FFF;
-    margin-top: -10px;
-    margin-bottom: 20px;
-  width:100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  width:90%;
 }
 
 /* storyboards with tight gutters ------------------------------------------- */
