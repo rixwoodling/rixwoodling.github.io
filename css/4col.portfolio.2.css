@@ -9,12 +9,36 @@
 /* body -------------------------------------------------------------------- */
 
 body {
-    background-color: #3e3d41; /* originally #333 */
+    background-color: #333;
     -webkit-font-smoothing: antialiased;
 }
+h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+    margin-top: 0;
+}
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+    margin-top: 10px;
+}
 a {
-    text-decoration: none;
-    color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 0px;
+    text-decoration:underline;
+    color:#999;
 }
 p > a:hover{
     color: #d9d9d9;
@@ -159,44 +183,75 @@ ul.social-icons {
 
 /* portfolio --------------------------------------------------------------- */
 
-img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-  -webkit-backface-visibility: hidden; /* Fix for transition flickering */    
+.container {
+    background-color: #e0e0e0;
+    width: 100%;
 }
-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);    
-}
-
 .container-fluid {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 25px;
-    background-color: #f8f8ff; /* originally #e0e0e0 */
+    max-width: 700px;
+    background-color: #e0e0e0;
+}
+.container p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+    margin-bottom: 10;
+}
+.container a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 0px;
+    text-decoration:underline;
+    color:#ff7600;
+}
+.container p > a:hover{
+    color: #333;
+    text-decoration:  underline;
+}
+
+.container hr {
+  border:none;
+  border-top:1px dotted #FFF;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  width:100%;
+}
+
+/* storyboards with tight gutters ------------------------------------------- */
+
+.row.no-gutter-2 {
+    margin-left: -5px;
+    margin-right: -5px;
+}    
+/* remove padding all columns */
+.row.no-gutter-2>div[class*='col-'] {
+    padding: 5px;
+    margin-bottom: 0px;
 }
 
 .resizable .row .col {
-width:100%;
-} 
-
-@media (min-width:1024px) {
-/* orig min-width:1024px */    
-/* (768 * 12) / 9 */
-.resizable .row .col {
-   width:50%; 
-   float:left;       
-            }             
+width:100%; 
+      } 
+@media (min-width:1024px) { /* (768 * 12) / 9 */  
+    .resizable .row .col {
+        width:50%; 
+        float:left; 
+    }             
 }  
-@media (min-width:1280px) {
-/* orig min-width:1280px */    
-/* (960 * 12) / 9 */
- .resizable .row .col { 
-   width:33.33%; 
-   float:left; 
-  }               
+@media (min-width:1280px) { /* (960 * 12) / 9 */ 
+    .resizable .row .col { 
+        width:33.33%; 
+        float:left;      
+    }               
 }  
 
 .portfolio-item {
@@ -205,21 +260,21 @@ width:100%;
 
 /* footer ------------------------------------------------------------------ */
 
+.footer-container{
+    height:100px;
+    padding-top:15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .div-left{
     float:left;
+    text-align: left;
     padding-left:10px;
 }
 .div-right{
     float:right;
+    text-align: right;
     padding-right:10px;
-}
-.footer-container{
-    height:40px;
-    padding-top:15px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 10px;
-    color: #999;
 }
 .footer {
     height:0.5em;
@@ -231,6 +286,23 @@ width:100%;
     padding-left:10px;
 }
 .footer a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 10px;
+    text-decoration:none;
+    color:#ff7600;
+}
+.footer p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 5px;
+    margin-bottom: 20;
     text-decoration:none;
     color:#999;
 }
